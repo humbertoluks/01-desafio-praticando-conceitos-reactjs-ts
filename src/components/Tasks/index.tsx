@@ -1,3 +1,4 @@
+import { Task } from '../Task'
 import style from './tasks.module.css'
 
 export function Tasks() {
@@ -14,6 +15,10 @@ export function Tasks() {
           <span className={style.counter}>0 de 5</span>
         </div>
       </header>
+      <div className={style.list}>
+        <Task></Task>
+        <Task></Task>
+      </div>
     </section>
   )
 }
