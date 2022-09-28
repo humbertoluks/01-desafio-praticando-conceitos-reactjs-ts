@@ -3,7 +3,7 @@ import todoLogo from '../../assets/Logo.svg'
 
 export function Header() {
   return (
-    <header className={styles.header}>
+    <header className={styles.todoHeader}>
       <img src={todoLogo} alt="Todo Logo" />
     </header>
   )

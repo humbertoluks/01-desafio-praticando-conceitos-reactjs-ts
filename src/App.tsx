@@ -1,12 +1,14 @@
 import { Header } from "./components/Header"
-import { Task } from "./components/Task"
+import { NewTask } from "./components/NewTask"
+import { Tasks } from "./components/Tasks/Tasks"
 
 function App() {
 
   return (
     <>
       <Header />
-      <Task />
+      <NewTask />
+      <Tasks />
     </>
   )
 }
