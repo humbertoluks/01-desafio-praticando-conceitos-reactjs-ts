@@ -1,14 +1,19 @@
 import { Trash } from 'phosphor-react'
+import { ITask } from '../../App'
 import style from './task.module.css'
 
-export function Task() {
+interface Props {
+  task: ITask
+}
+
+export function Task({ task }: Props) {
   return (
     <div className={style.task}>
       <button className={style.checkContainer}>
         <div></div>
       </button>
       <p>
-        Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.
+        {task.title}
       </p>
       <button className={style.deleteButton}>
         <Trash size={20} />
